@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media_query</title>
+
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+      }
+      @media screen and (max-width: 1200px) {
+        .screen_1200px {
+          width: 400px;
+          height: 400px;
+          background-color: red;
+        }
+      }
+      @media screen and (max-width: 720px) {
+        .screen_720px {
+          width: 150px;
+          height: 150px;
+          background-color: blue;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .screen_500px {
+          width: 100px;
+          height: 100px;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="screen_1200px">1200px</div>
+    <div class="screen_720px">720px</div>
+    <div class="screen_500px">500px</div>
+  </body>
+</html>
